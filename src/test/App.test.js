@@ -9,7 +9,7 @@ test('renders app less than 50', () => {
 
 test('renders app at 50', () => {
   render(<App count={50}/>);
-  const linkElement = screen.getByText(/Pricing/i);
+  const linkElement = screen.getByText(/Mars Rover/i);
   expect(linkElement).toBeInTheDocument();
 });
 

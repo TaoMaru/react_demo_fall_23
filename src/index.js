@@ -8,9 +8,8 @@ import {
   RouterProvider
 } from 'react-router-dom'
 import ErrorNotFound from './components/ErrorNotFound';
-import BodyHooks from './components/BodyHooks';
-import Body from './components/Body';
-import EPICContent from './components/EPICContent';
+import APODContent from './components/APODContent';
+import MarsRoverContent from './components/MarsRoverContent';
 import IndexRoute from './components/IndexRoute';
 
 const router = createBrowserRouter([
@@ -24,16 +23,12 @@ const router = createBrowserRouter([
         element: <IndexRoute/>
       },
       {
-        path: 'hooks',
-        element: <BodyHooks />
+        path: '/home',
+        element: <APODContent/>
       },
       {
-        path: 'classState',
-        element: <Body />
-      },
-      {
-        path: 'epic',
-        element: <EPICContent />
+        path: 'mars-rover',
+        element: <MarsRoverContent />
       }
     ]
   }

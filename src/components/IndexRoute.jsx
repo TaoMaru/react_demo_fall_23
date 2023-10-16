@@ -1,6 +1,10 @@
+import APODContent from "./APODContent"
+
 const IndexRoute = () => {
     return (
-      <></>
+      <>
+        <APODContent />
+      </>
     )
 }
 
