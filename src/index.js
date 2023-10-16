@@ -10,6 +10,7 @@ import {
 import ErrorNotFound from './components/ErrorNotFound';
 import BodyHooks from './components/BodyHooks';
 import Body from './components/Body';
+import EPICContent from './components/EPICContent';
 import IndexRoute from './components/IndexRoute';
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: 'classState',
         element: <Body />
+      },
+      {
+        path: 'epic',
+        element: <EPICContent />
       }
     ]
   }
