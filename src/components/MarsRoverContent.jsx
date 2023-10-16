@@ -41,8 +41,8 @@ class MarsRoverContent extends Component{
                <div className="card apod-card">
                     <img src={imgSrc} alt={imgSrc} className="nasaAPOD-img card-img-top"/>
                     <div className="apod-copyright card-body px-3">
-                       <p>Taken by: {marsRover}</p>
-                       <p>Landing date: {landingDate}</p>
+                       <p className="card-text">Taken by: {marsRover}</p>
+                       <p className="card-text">Landing date: {landingDate}</p>
                     </div>
                 </div>
             </div>

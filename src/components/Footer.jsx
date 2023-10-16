@@ -1,15 +1,10 @@
 const Footer = () => {
     return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary react-app-footer">
-        <div className="container-fluid">
-            <div className="navbar-nav">
-                <p className="nav-link text-light" aria-current="page">Made by
-                    <a className="nav-link active" aria-current="page" href="https://github.com/TaoMaru">TaoMaru</a>
-                </p>
-                <p className="nav-link text-light" aria-current="page">Thanks for visiting!</p>
-            </div>
-        </div>
-      </nav>
+    <footer class="bg-body-tertiary text-center text-lg-start react-app-footer">
+      <div class="text-center p-3">Thanks for visiting! 
+        <a class="text-dark" href="https://github.com/taomaru"> - TaoMaru</a>
+      </div>
+    </footer>
     )
 }
 
