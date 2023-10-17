@@ -5,8 +5,12 @@ jest.mock('react-router-dom', () => ({
     useRouteError: jest.fn()
 }));
 
-test('renders ErrorNotFound than 50', () => {
-  render(<ErrorNotFound count={25}/>);
+jest.mock('axios', () =>( {
+  useRouteError: jest.fn()
+}));
+
+test('renders app', () => {
+  render(<ErrorNotFound />);
   const linkElement = screen.getByText(/Sorry, an unexpected error has occurred/i);
   expect(linkElement).toBeInTheDocument();
 });

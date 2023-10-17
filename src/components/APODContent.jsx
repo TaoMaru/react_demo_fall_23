@@ -32,8 +32,8 @@ class APODContent extends Component{
                <div className="card apod-card">
                     <img src={nasaAPOD.url} alt={nasaAPOD.explanation} className="nasaAPOD-img card-img-top"/>
                     <div className="apod-copyright card-body px-3">
-                        <p className="card-text">{nasaAPOD.copyright}</p>
-                        <p className="card-text">{nasaAPOD.date}</p>
+                        <p className="card-text">Taken by: {nasaAPOD.copyright}</p>
+                        <p className="card-text">Date: {nasaAPOD.date}</p>
                         <p>{nasaAPOD.explanation}</p>
                     </div>
                 </div>
