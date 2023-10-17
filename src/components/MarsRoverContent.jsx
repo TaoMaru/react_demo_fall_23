@@ -19,17 +19,11 @@ class MarsRoverContent extends Component{
         .then((response) => {
             this.setState({marsRover: response.data.photos[0].rover.name})
             this.setState({imgSrc: response.data.photos[0].img_src})
-            this.setState({landingDate: response.data.phot0s[0]}.rover.landing_date)
-            console.log(response.data.photos);
+            this.setState({landingDate: response.data.photos[0]}.rover.landing_date)
         })
         .catch(function (error) {
             console.log(error);
         })
-    }
-
-    componentDidUpdate(prevProps, prevState){
-        console.log(prevState)
-        console.log(this.state)
     }
 
     render(){
@@ -41,8 +35,8 @@ class MarsRoverContent extends Component{
                <div className="card apod-card">
                     <img src={imgSrc} alt={imgSrc} className="nasaAPOD-img card-img-top"/>
                     <div className="apod-copyright card-body px-3">
-                       <p className="card-text">Taken by: {marsRover}</p>
-                       <p className="card-text">Landing date: {landingDate}</p>
+                       <p className="card-text">Taken by: {marsRover ? marsRover : "Not Provided"}</p>
+                       <p className="card-text">Landing date: {landingDate !== "" ? landingDate : "Unknown"}</p>
                     </div>
                 </div>
             </div>
